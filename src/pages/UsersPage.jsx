@@ -7,16 +7,20 @@ export default function UsersPage() {
       title="User"
       resource="users"
       initialForm={{
-        firstname: "",
-        lastname: "",
+        username: "",
         email: "",
         password: ""
       }}
       fields={[
-        { name: "firstname", label: "First Name" },
-        { name: "lastname", label: "Last Name" },
-        { name: "email", label: "Email", type: "email" },
-        { name: "password", label: "Password", type: "text" }
+        { name: "username", label: "Username" },
+        { name: "email", label: "Email" },
+        {
+          name: "password",
+          label: "Password",
+          type: "password",
+          hideInList: true,
+          clearOnEdit: true
+        }
       ]}
     />
   );

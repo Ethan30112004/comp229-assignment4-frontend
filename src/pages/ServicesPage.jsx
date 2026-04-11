@@ -7,11 +7,11 @@ export default function ServicesPage() {
       title="Service"
       resource="services"
       initialForm={{
-        title: "",
+        name: "",
         description: ""
       }}
       fields={[
-        { name: "title", label: "Title" },
+        { name: "name", label: "Service Name" },
         { name: "description", label: "Description", type: "textarea" }
       ]}
     />
